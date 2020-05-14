@@ -84,13 +84,53 @@ a:hover{
 
 .site-title{
     font-size: 3em;
+    font-family:'Roboto', sans-serif;
 }
   
 .site-subtitle {
     font-style: Italic; 
+    font-family:'Roboto', sans-serif;
+}
+
+.portfolio {
+    padding: 2em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns:repeat(3, 260px);
+        align-content: center;
+        justify-content: center; 
+        height: calc(100vh- 8em - 48em);
+    }
+}
+
+.portfolio figure{
+    text-align: center;
 }
 
 .img-portfolio {
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
 }
+
