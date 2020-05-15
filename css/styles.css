@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('../img/fundo4.jpg');
+    background-color: #000080;
     background-size: auto 100vh;
     font-family: Arial;
     color: white;
@@ -32,7 +32,7 @@ body {
     body {
         font-size: 18px;
         background-image: none;
-        background-color: #1C1C1C;
+        background-color: #191970;
     }
 }
 
@@ -43,14 +43,29 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.titulo{
+    transform: scale(0.5) translateY(50vh);
+    opacity: 0;
+    
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+
+    100%{
+        transform: scale(1.2) translateY(0);
+        opacity: 1;
+    }
+}
   
 a{
     text-decoration: none;
-    color: #1C1C1C;
+    color: #000080;
 }
   
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
   
 .menu{
@@ -64,6 +79,13 @@ a:hover{
 .menu a{
     display: block;
     padding: 10px 20px;
+    z-index: 1;
+}
+
+.menu a:hover{
+    background-color: #000080;
+    color: whitesmoke;
+    transition: background-color 1s, color 1s;
 }
   
 .menu li{
@@ -75,6 +97,14 @@ a:hover{
 .menu ul{
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 760px){
+    .menu{
+        position: fixed;
+        background-color: whitesmoke;
+        
+    }
 }
   
 .site-title, .site-subtitle {
@@ -92,12 +122,14 @@ a:hover{
     font-family:'Roboto', sans-serif;
 }
 
+.contato,
 .portfolio {
     padding: 2em;
-    margin-bottom: 1.5em;
+    min-height: 100vh;
     font-size: 2em;
 }
 
+.contato h2,
 .portfolio h2{
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
@@ -132,5 +164,26 @@ a:hover{
     height: 180px;
     width: 240px;
     object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
 }
 
+.img-portfolio:hover {
+    transform: scale(1.2) ;
+}
+
+.contato .icons{
+    text-align: center;
+}
+
+.contato a{
+    color: whitesmoke;
+    font-size: 2em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 12px black;
+}
