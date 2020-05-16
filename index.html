@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#portfolio">Projetos</a></li>
@@ -28,51 +28,115 @@
       </div>
     </div>
   </header>
-  <section class="portfolio" id="experiencia">
+
+  <section class="sobre container" id="sobre">
+
+    <h2>Sobre</h2>
+    <br />
+
+    <figure class="avatar">  
+      <img src="./img/foto.jpeg" alt="Heverton Gomes">
+    </figure>
+
+    <h3>Formação</h3>
+    <p>
+      <ul>
+        <li>Técnico em Informática - <b>IFRN</b> Instiuto Federal de Ciência e Tecnlogia do Rio Grande do Norte</li>
+        <li>Análise e Desenvolvimento de Sistem - <b>UFRN</b> Universidade Federal do Rio Grande do Norte</li>
+      </ul>
+    </p>
+
+    <p>
+      Atualmente cursando ensino superior em Tecnologia en Análise e Desenvolvimento de Sistemas pel UFRN, 
+      Tenho interesse pela área de desenvolvimento web e mobile, porém tenho interesse profundo em Machine Learning e
+      Ciência de dados, sempre aberto para conhecer coisas novas e compartilhar também.
+    </p>
+  
+  </section>
+
+  <section class="sobre container" id="experiencia">
+    
+    <h2>Experiência</h2>
+
+    <p>
+      <ul>
+        <li>Estágio em Desenvolvimento Web <b>RNP PoP-RN</b> Desenvolvimento Web Utilizando o Framework Django</li>
+      </ul>
+    </p>
+  </section>
+
+  <section class="contato container" id="skills">
+
+    <h2>Skills</h2>
+    <br />
+
+    <div class="grid icons">
+
+      <a><i class="fab fa-html5"></i></a>
+
+      <a><i class="fab fa-css3-alt"></i></a>
+
+      <a><i class="fab fa-js-square"></i></a>
+
+      <a><i class="fab fa-java"></i></a>
+
+      <a><i class="fab fa-python"></i></a>
+
+      <a><i class="fab fa-node"></i></a>
+      
+      <a><i class="fab fa-react"></i></a>
+
+      <a><i class="fab fa-vuejs"></i></a>
+    </div>
+  </section>
+
+  <section class="portfolio container" id="portfolio">
+    
     <h2>Portfólio e Projetos</h2>
     <br />
-    <br />
-    
+
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/erp.png" alt="erp">
-        <figcaption>Desenvolvimento de ERP</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/mobile.png" alt=">Mobile">
-        <figcaption>Desenvolvimento Mobile</figcaption>
-      </figure>
+    
       <figure>
         <img class="img-portfolio" src="./img/web.png" alt="Web">
         <figcaption>Desenvolvimento Web</figcaption>
       </figure>
-      <figure>
-        <a target="_black" href="https://github.com/hevertongomes/be-the-hero">
-        <img class="img-portfolio" src="./img/bethehero.png" alt="Projetos pessoais">
-        </a>
-        <figcaption>Be the Hero</figcaption>
-      </figure>
-  </div>
+
+      <div class="flip-card ">
+        <div class="card">
+          <figure class="card-front">
+              <a target="_black" href="https://github.com/hevertongomes/be-the-hero">
+                  <img class="img-portfolio" src="./img/bethehero.png" alt="Projetos pessoais">
+              </a>
+              <figcaption>Be the Hero</figcaption>
+          </figure>
+
+          <div class="card-back">
+            <p>Projeto resultante da Semana Omnisteck 11.0</p>
+          </div>
+      </div>
+      </div>
+    </div>
   </section>
 
-  <section class="contato" id="contato">
+  <section class="contato container" id="contato">
     <h2>Contato</h2>
-      <br/>
-      <div class="grid icons">
-        <a target="_blank" href="https://github.com/hevertongomes">
-          <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/HevertonGomes18">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/heverton-gomes-8221181a5/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:heverton.gomes2018@gmail.com">
-          <i class="far fa-envelope"></i>
-        </a>
-        </div>
-    </section>
+    <br />
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/hevertongomes">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/HevertonGomes18">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/heverton-gomes-8221181a5/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:heverton.gomes2018@gmail.com">
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+  </section>
 
 </body>
 
