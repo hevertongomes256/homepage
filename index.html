@@ -13,6 +13,9 @@
 <body>
   <header>
     <nav class="menu">
+      <button class="burguer" id="burguer">
+        ☰
+      </button>
       <ul class="container">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiência</a></li>
@@ -138,6 +141,14 @@
     </div>
   </section>
 
+  <script>
+      const burguer = document.getElementById('burguer');
+      const ul = document.querySelector('.container');
+
+      burguer.addEventListener('click', () => {
+        ul.classList.toggle('show');
+      });
+  </script>
 </body>
 
 </html>

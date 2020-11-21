@@ -58,6 +58,7 @@ header {
         opacity: 1;
     }
 }
+
   
 a{
     text-decoration: none;
@@ -99,12 +100,10 @@ a:hover{
     justify-content: space-around;
 }
 
+
 @media screen and (max-width: 760px){
-    .menu{
-        position: fixed;
-        background-color: whitesmoke;
-        
-    }
+    
+
 }
   
 .site-title, .site-subtitle {
@@ -255,4 +254,41 @@ a:hover{
 .contato a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 12px black;
+}
+
+.burguer {
+    border: 0;
+    background-color: transparent;
+    color: #0594ec;
+    display: none;
+    font-size: 20px;
+}
+
+/*Menu haburguer*/
+@media (max-width: 480px) {
+
+    .burguer {
+        display: block;
+    }
+    .menu {
+        width: 100vh;
+        padding: 15px;
+    }
+
+    .menu .container {
+        background-color: #fff;
+        position: fixed;
+        box-shadow: 0 3px 5px rgba(241, 235, 235, 0.1);
+        flex-direction: column;
+        top: 60px;
+        left: 10%;
+        width: 80%;
+        transform: translateX(120%);
+        text-align: center;
+        transition: transform 0.4s ease;
+    }
+
+    .menu .container.show {
+        transform: translateX(0);
+    }
 }
