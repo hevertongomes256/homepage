@@ -170,6 +170,7 @@ a:hover{
 .portfolio .grid {
     display: grid;
     gap: 2em;
+    justify-content: space-between;
 }
 
 
@@ -212,6 +213,7 @@ a:hover{
     transform-style: preserve-3d;
     transition: transform 1s;
     z-index: 1;
+    padding: 100px;
 }
 
 .flip-card:hover .card{
@@ -222,6 +224,7 @@ a:hover{
     background-color: whitesmoke;
     height: 180px;
     width: 110%;
+    font-size: 1.6rem;
     transform: rotateY(180deg);
     color: black;
 }
@@ -290,5 +293,9 @@ a:hover{
 
     .menu .container.show {
         transform: translateX(0);
+    }
+
+    .portfolio .container{
+        align-items: center;
     }
 }
