@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000080;
+    background-color: #005780;
     background-size: auto 100vh;
     font-family: Arial;
     color: white;
@@ -32,7 +32,7 @@ body {
     body {
         font-size: 18px;
         background-image: none;
-        background-color: #191970;
+        background-color: #005780;
     }
 }
 
@@ -62,7 +62,7 @@ header {
   
 a{
     text-decoration: none;
-    color: #000080;
+    color: #005780;
 }
   
 a:hover{
@@ -84,7 +84,7 @@ a:hover{
 }
 
 .menu a:hover{
-    background-color: #000080;
+    background-color: #005780;
     color: whitesmoke;
     transition: background-color 1s, color 1s;
 }
